@@ -247,7 +247,7 @@ corner) of the chart in every pattern.
 
 ## How long I spent
 
-_TODO: fill in._
+About 30 minutes.
 
 ## What I'd do with more time
 
