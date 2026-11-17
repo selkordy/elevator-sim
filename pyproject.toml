@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elevator-sim"
+version = "0.1.0"
+description = "Discrete-time simulation of a destination-dispatch elevator system"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.5"]
+dev = ["pytest>=7", "matplotlib>=3.5"]
+
+[project.scripts]
+elevator-sim = "elevator_sim.cli:main"
+
+[tool.setuptools]
+packages = ["elevator_sim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
